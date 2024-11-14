@@ -8,9 +8,11 @@ parameter FIFO_DATA_WIDTH = 8;
 parameter FIFO_MEM_ADDR_WIDTH = 4;
 parameter TEST_FLOW_LENGTH = 50;
 
+`include "config_class.sv"
 `include "sequence_item.sv"
 
 typedef uvm_sequencer #(sequence_item) sequencer;
+
 
 `include "sequence.sv"
 `include "char_sequence.sv"
@@ -57,5 +59,4 @@ module top;
     $dumpvars();
   end
   
-endmodule 
-  
+endmodule

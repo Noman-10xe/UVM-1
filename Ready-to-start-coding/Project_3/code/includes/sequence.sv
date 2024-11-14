@@ -1,14 +1,17 @@
+
 class base_sequence extends uvm_sequence #(sequence_item);
   `uvm_object_utils(base_sequence);
     
     sequence_item fifo_push;
+  	config_class m_cfg;
     
     function new(string name ="base_sequence");
       super.new(name);
+      m_cfg = new();
     endfunction
     
   task body();
-    repeat (30) begin
+    repeat (m_cfg.num_trans) begin
       fifo_push = sequence_item::type_id::create("fifo_push");
       start_item(fifo_push);
       assert(fifo_push.randomize());
