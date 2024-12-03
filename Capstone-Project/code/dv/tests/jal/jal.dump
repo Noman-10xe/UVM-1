@@ -1,0 +1,76 @@
+
+test-binaries/jal/jal.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010080 <_start-0x80>:
+   10080:	00000013          	nop
+   10084:	00000013          	nop
+   10088:	00000013          	nop
+   1008c:	00000013          	nop
+   10090:	00000013          	nop
+   10094:	00000013          	nop
+   10098:	00000013          	nop
+   1009c:	00000013          	nop
+   100a0:	00000013          	nop
+   100a4:	00000013          	nop
+   100a8:	00000013          	nop
+   100ac:	00000013          	nop
+   100b0:	00000013          	nop
+   100b4:	00000013          	nop
+   100b8:	00000013          	nop
+   100bc:	00000013          	nop
+   100c0:	00000013          	nop
+   100c4:	00000013          	nop
+   100c8:	00000013          	nop
+   100cc:	00000013          	nop
+   100d0:	00000013          	nop
+   100d4:	00000013          	nop
+   100d8:	00000013          	nop
+   100dc:	00000013          	nop
+   100e0:	00000013          	nop
+   100e4:	00000013          	nop
+   100e8:	00000013          	nop
+   100ec:	00000013          	nop
+   100f0:	00000013          	nop
+   100f4:	00000013          	nop
+   100f8:	00000013          	nop
+   100fc:	00000013          	nop
+
+00010100 <_start>:
+   10100:	00300513          	li	a0,3
+   10104:	00300593          	li	a1,3
+   10108:	010000ef          	jal	10118 <sum>
+   1010c:	00600613          	li	a2,6
+   10110:	00a60863          	beq	a2,a0,10120 <ECALL>
+   10114:	fedff06f          	j	10100 <_start>
+
+00010118 <sum>:
+   10118:	00b50533          	add	a0,a0,a1
+   1011c:	00008067          	ret
+
+00010120 <ECALL>:
+   10120:	00000073          	ecall
+	...
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	2741                	.insn	2, 0x2741
+   2:	0000                	.insn	2, 0x
+   4:	7200                	.insn	2, 0x7200
+   6:	7369                	.insn	2, 0x7369
+   8:	01007663          	bgeu	zero,a6,14 <_start-0x100ec>
+   c:	001d                	.insn	2, 0x001d
+   e:	0000                	.insn	2, 0x
+  10:	7205                	.insn	2, 0x7205
+  12:	3376                	.insn	2, 0x3376
+  14:	6932                	.insn	2, 0x6932
+  16:	7032                	.insn	2, 0x7032
+  18:	5f31                	.insn	2, 0x5f31
+  1a:	326d                	.insn	2, 0x326d
+  1c:	3070                	.insn	2, 0x3070
+  1e:	7a5f 6d6d 6c75      	.insn	6, 0x6c756d6d7a5f
+  24:	7031                	.insn	2, 0x7031
+  26:	0030                	.insn	2, 0x0030

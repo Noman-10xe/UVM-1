@@ -1,0 +1,132 @@
+
+Note-[RT_BS] Larger stack needed
+  Note: Bumping stack limit from 8192 to 8250 Kbytes.
+
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Dec  3 14:46 2024
+UVM_INFO /usr/synopsys/vcs-L-2016.06//etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+ VCS Coverage Metrics Release L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+UVM_INFO /usr/synopsys/vcs-L-2016.06//etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
+uvm_test_top               base_test                   -     @339 
+  env                      environment                 -     @367 
+    data_agt               data_agent                  -     @392 
+      driver               data_driver                 -     @539 
+        rsp_port           uvm_analysis_port           -     @558 
+        seq_item_port      uvm_seq_item_pull_port      -     @548 
+      monitor              data_monitor                -     @568 
+        ap                 uvm_analysis_port           -     @577 
+      sequencer            data_sequencer              -     @587 
+        rsp_export         uvm_analysis_export         -     @596 
+        seq_item_export    uvm_seq_item_pull_imp       -     @714 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+    instr_agt              instr_agent                 -     @383 
+      driver               instr_driver                -     @732 
+        rsp_port           uvm_analysis_port           -     @751 
+        seq_item_port      uvm_seq_item_pull_port      -     @741 
+      monitor              instr_monitor               -     @761 
+        ap                 uvm_analysis_port           -     @770 
+      sequencer            instr_sequencer             -     @780 
+        FIFO               uvm_tlm_analysis_fifo #(T)  -     @917 
+          analysis_export  uvm_analysis_imp            -     @966 
+          get_ap           uvm_analysis_port           -     @956 
+          get_peek_export  uvm_get_peek_imp            -     @936 
+          put_ap           uvm_analysis_port           -     @946 
+          put_export       uvm_put_imp                 -     @926 
+        rsp_export         uvm_analysis_export         -     @789 
+        seq_item_export    uvm_seq_item_pull_imp       -     @907 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+    vseqr                  virtual_sequencer           -     @401 
+      rsp_export           uvm_analysis_export         -     @410 
+      seq_item_export      uvm_seq_item_pull_imp       -     @528 
+      arbitration_queue    array                       0     -    
+      lock_queue           array                       0     -    
+      num_last_reqs        integral                    32    'd1  
+      num_last_rsps        integral                    32    'd1  
+------------------------------------------------------------------
+
+UVM_INFO verif/UVCs/data_UVC/data_driver.sv(48) @ 0: uvm_test_top.env.data_agt.driver [uvm_test_top.env.data_agt.driver] Data Driver Started
+UVM_INFO verif/UVCs/instr_UVC/instr_driver.sv(46) @ 0: uvm_test_top.env.instr_agt.driver [uvm_test_top.env.instr_agt.driver] Instruction Driver Started
+UVM_INFO verif/UVCs/instr_UVC/instr_monitor.sv(67) @ 15: uvm_test_top.env.instr_agt.monitor [instr_monitor] Transaction Collected :
+---------------------------------------------
+Name              Type            Size  Value
+---------------------------------------------
+req               instr_seq_item  -     @1005
+  instr_req_o     integral        1     'h0  
+  instr_addr_o    integral        32    'h0  
+  instr_gnt_i     integral        1     'h0  
+  instr_rvalid_i  integral        1     'h0  
+  instr_rdata_i   integral        32    'h0  
+  instr_err_i     integral        1     'h0  
+---------------------------------------------
+
+UVM_INFO verif/UVCs/data_UVC/data_monitor.sv(70) @ 15: uvm_test_top.env.data_agt.monitor [data_monitor] Transaction Collected :
+-----------------------------------------------
+Name                 Type           Size  Value
+-----------------------------------------------
+seq                  data_seq_item  -     @1009
+  data_addr_o        integral       32    'h0  
+  data_req_o         integral       1     'h0  
+  data_we_o          integral       1     'h0  
+  data_be_o          integral       4     'h0  
+  data_wdata_o       integral       32    'h0  
+  data_wdata_intg_o  integral       7     'h0  
+  data_gnt_i         integral       1     'h0  
+  data_rvalid_i      integral       1     'h0  
+  data_err_i         integral       1     'h0  
+  data_rdata_i       integral       32    'h0  
+  data_rdata_intg_i  integral       7     'h0  
+-----------------------------------------------
+
+UVM_INFO verif/UVCs/env_UVC/base_test.sv(85) @ 30: uvm_test_top [BASE TEST] fetch_enable has been set. Starting Sequences...
+UVM_INFO verif/UVCs/env_UVC/base_test.sv(89) @ 30: uvm_test_top [LOAD_BIN] Loading Binary File...
+
+Error-[STASKE_FOPANFN] Null argument to $fopen
+verif/UVCs/env_UVC/base_test.sv, 115
+  The argument passed to $fopen is NULL, where as a filename is expected.
+  Please pass a valid file name in the form of a string to  $fopen, and 
+  recompile.
+
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 30
+CPU Time:      0.710 seconds;       Data structure size:   0.7Mb
+Tue Dec  3 14:46:51 2024

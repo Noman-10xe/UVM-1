@@ -1,0 +1,30 @@
+Dashboard
+
+Date: Tue Dec  3 14:47:00 2024
+
+User: unknown
+
+Version: L-2016.06
+Command line: urg -dir simv.vdb -format text -group show_bin_values 
+
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE BRANCH ASSERT 
+ 12.06  23.90  19.08   0.05  16.30   0.99 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE BRANCH ASSERT NAME                               
+ 12.02  23.84  19.08   0.05  16.16   0.99 tb_top                             
+ 31.67  33.33 --     --      30.00 --     uvm_custom_install_recording       
+ 20.34  23.19 --     --      17.50 --     uvm_custom_install_verdi_recording 
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE BRANCH ASSERT 
+ 11.97  22.88  19.08   0.05  15.60   2.22 
+
