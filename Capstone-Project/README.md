@@ -18,18 +18,19 @@ This repository contains a Universal Verification Methodology (UVM)-based testbe
   - INSTR_UVC, DATA_UVC, and ENV_UVC enable seamless verification.
 ---
 
-## Block Diagrams  
-### Instruction Agent  
-![Instruction Agent](code/docs/diagrams/UVM-Capstone-instr-agent.jpg)
+## Block Diagrams
+### Instruction Agent
+<img src="code/docs/diagrams/UVM-Capstone-instr-agent.jpg" alt="Instruction Agent" width="600">
 
-### Data Agent  
-![Data Agent](code/docs/diagrams/UVM-Capstone-data-agent.jpg)
+### Data Agent
+<img src="code/docs/diagrams/UVM-Capstone-data-agent.jpg" alt="Data Agent" width="600">
 
-### Environment Overview  
-![Environment Overview](code/docs/diagrams/UVM-Capstone-environment.jpg)
+### Environment Overview
+<img src="code/docs/diagrams/UVM-Capstone-environment.jpg" alt="Environment Overview" width="600">
 
-### Top Module  
-![Testbench Architecture](code/docs/diagrams/UVM-Capstone-Testbench-diagram.jpg) 
+### Top Module
+<img src="code/docs/diagrams/UVM-Capstone-Testbench-diagram.jpg" alt="Testbench Architecture" width="600">
+
 
 ---
 
