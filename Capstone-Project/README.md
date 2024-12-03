@@ -20,16 +20,16 @@ This repository contains a Universal Verification Methodology (UVM)-based testbe
 
 ## Block Diagrams
 ### Instruction Agent
-<img src="code/docs/diagrams/UVM-Capstone-instr-agent.jpg" alt="Instruction Agent" width="800">
+<img src="code/docs/diagrams/UVM-Capstone-instr-agent.jpg" alt="Instruction Agent" width="1000">
 
 ### Data Agent
-<img src="code/docs/diagrams/UVM-Capstone-data-agent.jpg" alt="Data Agent" width="800">
+<img src="code/docs/diagrams/UVM-Capstone-data-agent.jpg" alt="Data Agent" width="1000">
 
 ### Environment Overview
-<img src="code/docs/diagrams/UVM-Capstone-environment.jpg" alt="Environment Overview" width="800">
+<img src="code/docs/diagrams/UVM-Capstone-environment.jpg" alt="Environment Overview" width="1000">
 
 ### Top Module
-<img src="code/docs/diagrams/UVM-Capstone-Testbench-diagram.jpg" alt="Testbench Architecture" width="800">
+<img src="code/docs/diagrams/UVM-Capstone-Testbench-diagram.jpg" alt="Testbench Architecture" width="1000">
 
 
 ---
